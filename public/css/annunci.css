@@ -1,0 +1,111 @@
+.annuncio{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    border-color: #30306C;
+    border: #30306C;
+
+}
+
+.columnimg {
+    color: #30306C;
+    grid-template-columns: 1fr 1fr 1fr;
+    float: left;
+    padding: 1rem;
+    width: 35%;
+}
+    
+.columntext,
+.columnprice{
+    margin-top: 10px;
+    padding-top: 10px;
+    height: 260px;
+    width: 25%;
+}
+
+.columntext{
+    width: 40%;
+}
+
+
+.titolocolonna{
+    font-size: large;
+    color: #30306C;
+    text-transform: uppercase;
+}
+
+.back-to-previous{
+    background-image: url('img/1500306-icona-freccia-verso-l-alto-gratuito-vettoriale.png');
+    transform: rotate(270deg);
+    background-size: contain ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    top: 180px;
+    left: 80px;
+}
+
+.nomecittàselezionata{
+    margin-top: 60px;
+    font-size: xx-large;
+    color: #30306C;
+    text-transform: uppercase;
+    margin-left: 80%;
+}
+
+.cittàsel{
+    margin-left: 70%;
+}
+
+.testocolonna{
+    font-size: medium;
+    color: #30306C;
+}
+
+
+.annunci{
+    padding:0px 5px ;
+    border: none;
+    border-radius: 26px;
+    margin: 30px;
+    line-height: 42px;
+}
+
+.imgaffitto{
+    border-radius: 26px;
+    height:300px;
+    width: 400px;
+}
+
+@media screen and (max-width:1200px){
+    .imgaffitto{
+        height: 200px;
+        width: 250px;  
+    }
+}
+
+@media screen and (max-width:750px){
+    .imgaffitto{
+        height: 180px;
+        width: 150px;  
+    }
+}
+.dettaglibutton{
+    background-color: #FF974B;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding:0px 20px ;
+    border: none;
+    border-radius: 26px;
+    margin-left: 25px;
+    line-height: 38px;
+    display: inline-flex;
+
+}
