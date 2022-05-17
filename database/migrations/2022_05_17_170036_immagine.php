@@ -13,7 +13,12 @@ class Immagine extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('immagine', function (Blueprint $table) {
+            $table->string('url',2500);
+            $table->bigIncrements('offerta');            
+            $table->foreign('offerta')->references('id')->on('offerta');
+            
+        });
     }
 
     /**
@@ -23,6 +28,6 @@ class Immagine extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('immagine');
     }
 }

@@ -13,7 +13,13 @@ class VincoloDiEtà extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('vincolo_eta', function (Blueprint $table) {
+            $table->integer('eta_minima');
+            $table->integer('eta_massima');
+            $table->bigIncrements('offerta');            
+            $table->foreign('offerta')->references('id')->on('offerta');
+            
+        });
     }
 
     /**
@@ -23,6 +29,6 @@ class VincoloDiEtà extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('vincolo_eta');
     }
 }

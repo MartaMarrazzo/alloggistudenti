@@ -13,7 +13,17 @@ class Contratto extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('contratto', function (Blueprint $table) {
+            $table->bigIncrements('id')->unsigned();
+            $table->date('data');
+            $table->String('locatore');
+            $table->foreign('locatore')->references('user')->on('utente');
+            $table->String('locatario');
+            $table->foreign('locatario')->references('user')->on('utente');
+            $table->String('offerta');
+            $table->foreign('offerta')->references('id')->on('offerta');
+            
+        });
     }
 
     /**
@@ -23,6 +33,6 @@ class Contratto extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('contratto');
     }
 }

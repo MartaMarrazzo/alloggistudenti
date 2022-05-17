@@ -13,7 +13,14 @@ class Offerta extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('offerta', function (Blueprint $table) {
+            $table->bigIncrements('id')->unsigned();
+            $table->string('stato',25);
+            $table->string('città',25);
+            $table->string('locazione',50);
+            $table->string('genere',1);
+            $table->integer('prezzo');
+        });
     }
 
     /**
@@ -23,6 +30,6 @@ class Offerta extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('offerta');
     }
 }

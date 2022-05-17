@@ -13,7 +13,11 @@ class Servizi extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('servizi', function (Blueprint $table) {
+            $table->string('tipo',30);            
+            
+           
+        });
     }
 
     /**
@@ -23,6 +27,6 @@ class Servizi extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('servizi');
     }
 }

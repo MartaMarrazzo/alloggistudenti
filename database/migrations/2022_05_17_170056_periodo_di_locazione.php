@@ -13,7 +13,13 @@ class PeriodoDiLocazione extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('periodo_di_locazione', function (Blueprint $table) {
+            $table->date('dat_inizio');
+            $table->date('data_fine');
+            $table->bigIncrements('offerta');            
+            $table->foreign('offerta')->references('id')->on('offerta');
+            
+        });
     }
 
     /**
@@ -23,6 +29,6 @@ class PeriodoDiLocazione extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('periodo_di_locazione');
     }
 }
