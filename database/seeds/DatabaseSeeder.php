@@ -13,7 +13,6 @@ class DatabaseSeeder extends Seeder {
 
     public function run() {
     
-
         DB::table('annunci')->insert([
             ['id' => 1, 'name' => 'Intero appartamento', 'desc' => 'n annunci', 'image' => 'sono presenti n annunci','price' => 2],
             ['id' => 2, 'name' => 'Bari', 'desc' => '0', 'image' => 'sono presenti n annunci','price' => 9],
@@ -94,6 +93,58 @@ class DatabaseSeeder extends Seeder {
             ['name' => 'HardDisk Modello4', 'catId' => 6,
                 'descShort' => 'Caratteristiche HardDisk4', 'descLong' => self::DESCPROD,
                 'price' => 78.66, 'discountPerc' => 7, 'discounted' => 01, 'image' => 'Ukraine.gif']
+        ]);
+
+        DB::table('offerta')->insert([
+            ['id' => 1, 'stato' => 'libera', 'locazione' => 'Via Pippo 1', 'prezzo' => 450, 'genere' => 'M'],
+            ['id' => 2, 'stato' => 'libera', 'locazione' => 'Via Pluto 80', 'prezzo' => 250, 'genere' => ''],
+            ['id' => 3, 'stato' => 'libera', 'locazione' => 'Via Colombo 100', 'prezzo' => 300, 'genere' => 'F'],
+            ['id' => 4, 'stato' => 'libera', 'locazione' => 'Via Raffaele 15', 'prezzo' => 180, 'genere' => 'M'],
+            ['id' => 5, 'stato' => 'libera', 'locazione' => 'Via Ciccio 25', 'prezzo' => 230, 'genere' => ''],
+            ['id' => 6, 'stato' => 'libera', 'locazione' => 'Via Romeo 44', 'prezzo' => 300, 'genere' => 'F'],
+            ['id' => 7, 'stato' => 'libera', 'locazione' => 'Via Solferino 74', 'prezzo' => 120, 'genere' => ''],
+            ['id' => 8, 'stato' => 'libera', 'locazione' => 'Via Pozzetto 69', 'prezzo' => 400, 'genere' => 'F'],
+            ['id' => 9, 'stato' => 'libera', 'locazione' => 'Via Cesare Battisti 42', 'prezzo' => 350, 'genere' => 'M'],
+            ['id' => 10, 'stato' => 'libera', 'locazione' => 'Via Umberto I', 'prezzo' => 250, 'genere' => ''],
+            ['id' => 11, 'stato' => 'libera', 'locazione' => 'Via Rossano 32', 'prezzo' => 200, 'genere' => '']
+        ]);
+
+
+        DB::table('postoLetto')->insert([
+            ['offerta' => 2, 'posti_letto_appartamento' => 2, 'posti_letto_camera' => 2, 'dimensioni_camera' => 15],
+            ['offerta' => 5, 'posti_letto_appartamento' => 3, 'posti_letto_camera' => 3, 'dimensioni_camera' => 20],
+            ['offerta' => 8, 'posti_letto_appartamento' => 1, 'posti_letto_camera' => 1, 'dimensioni_camera' => 10],
+            ['offerta' => 4, 'posti_letto_appartamento' => 2, 'posti_letto_camera' => 2, 'dimensioni_camera' => 15],
+            ['offerta' => 6, 'posti_letto_appartamento' => 1, 'posti_letto_camera' => 1, 'dimensioni_camera' => 10],
+            ['offerta' => 9, 'posti_letto_appartamento' => 4, 'posti_letto_camera' => 4, 'dimensioni_camera' => 12],
+            ['offerta' => 10, 'posti_letto_appartamento' => 3, 'posti_letto_camera' => 3, 'dimensioni_camera' => 25],
+        ]);
+
+
+
+        DB::table('appartamento')->insert([
+            ['offerta' => 1, 'posti_letto_appartamento' => 10, 'numero_di_camere' => 2, 'dimensioni' => 40],
+            ['offerta' => 7, 'posti_letto_appartamento' => 8, 'numero_di_camere' => 3, 'dimensioni' => 50],
+            ['offerta' => 3, 'posti_letto_appartamento' => 4, 'numero_di_camere' => 2, 'dimensioni' => 65],
+            ['offerta' => 11, 'posti_letto_appartamento' => 6, 'numero_di_camere' => 3, 'dimensioni' => 35],
+        ]);
+
+
+        DB::table('servizi')->insert([
+            ['tipo' => 'supermercato'],
+            ['tipo' => 'palestra'],
+            ['tipo' => 'piscina'],
+            ['tipo' => 'fermata autobus'],
+            ['tipo' => 'stazione'],
+            ['tipo' => 'copertura internet'],
+            ['tipo' => 'biblioteca'],
+        ]);
+
+
+        DB::table('utente')->insert([
+            ['user' => 'edoardo', 'password' => 'edo10', 'nome' => 'Edoardo', 'cognome' => 'Tarulli', 'sesso' => 'M', 'data_nascita' => '2000-05-19', 'tipo' => 1, 'image' => ''],
+            ['user' => 'luca', 'password' => 'ingegneria', 'nome' => 'Luca', 'cognome' => 'Marcianesi', 'sesso' => 'M', 'data_nascita' => '2000-12-18', 'tipo' => 2, 'image' => ''],
+            ['user' => 'diego20', 'password' => 'tecweb', 'nome' => 'Diego', 'cognome' => 'Mignani', 'sesso' => 'M', 'data_nascita' => '2000-02-05', 'tipo' => 1, 'image' => ''],
         ]);
     }
 
