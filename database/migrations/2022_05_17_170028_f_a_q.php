@@ -13,7 +13,12 @@ class FAQ extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('faq', function (Blueprint $table) {
+            $table->string('domanda');            
+            $table->string('risposta');
+            $table->string('stato');
+           
+        });
     }
 
     /**
@@ -23,6 +28,6 @@ class FAQ extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('faq');
     }
 }

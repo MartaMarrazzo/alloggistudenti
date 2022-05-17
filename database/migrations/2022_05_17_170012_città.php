@@ -13,7 +13,12 @@ class Città extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('città', function (Blueprint $table) {
+            $table->string('nome');
+            $table->string('image');
+            
+            
+        });
     }
 
     /**
@@ -23,6 +28,6 @@ class Città extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('città');
     }
 }

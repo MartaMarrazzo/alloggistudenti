@@ -13,7 +13,15 @@ class Possiede extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('possiede', function (Blueprint $table) {
+            $table->bigIncrements('offerta');            
+            $table->foreign('offerta')->references('id')->on('offerta');
+            $table->string('tipo',30); 
+            $table->foreign('tipo')->references('tipo')->on('servizi');
+            $table->integer('quantita');
+            $table->primary(array('offerta','tipo'))
+            
+        });
     }
 
     /**
@@ -23,6 +31,6 @@ class Possiede extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('possiede');
     }
 }

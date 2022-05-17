@@ -13,7 +13,12 @@ class Messaggio extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('messaggio', function (Blueprint $table) {
+            $table->bigIncrements('id')->unsigned();
+            $table->string('testo',2500);
+            $table->dateTime('data');
+            
+        });
     }
 
     /**
@@ -23,6 +28,7 @@ class Messaggio extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('messaggio');
     }
 }
+

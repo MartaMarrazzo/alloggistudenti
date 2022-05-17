@@ -13,7 +13,14 @@ class PostoLetto extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('postoLetto', function (Blueprint $table) {
+            $table->bigIncrements('offerta');            
+            $table->foreign('offerta')->references('id')->on('offerta');
+            $table->tinyInteger('posti_letto_appartamento');
+            $table->tinyInteger('posti_letto_camera');
+            $table->float('dimensioni_camera');
+           
+        });
     }
 
     /**
@@ -23,6 +30,6 @@ class PostoLetto extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('postoLetto');
     }
 }
