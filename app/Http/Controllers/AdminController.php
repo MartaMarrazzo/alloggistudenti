@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Resources\utente;
+use App\Models\Resources\Utente;
 use App\Http\Requests\NewProductRequest;
 use App\Http\Requests\LoginRequest;
 
@@ -11,7 +11,7 @@ class AdminController extends Controller {
     protected $_utente;
 
     public function __construct() {
-        $this-> _utente = new utente;
+        $this-> _utente = new Utente;
     }
 
     public function index() {
@@ -20,7 +20,7 @@ class AdminController extends Controller {
 
     public function registrati(NewProductRequest $request) {
 
-        $utente = new utente;
+        $utente = new Utente;
         $utente->user = $request->user;
         $utente->password = $request->password;
         $utente->nome = $request->nome;
@@ -43,7 +43,7 @@ class AdminController extends Controller {
         
         $name = $request->user;
         $password = $request->password;
-        if(utente::where('user', $name)->where('password', $password)->exists()){
+        if(Utente::where('user', $name)->where('password', $password)->exists()){
             return view('who');
         }
         else return view('where');

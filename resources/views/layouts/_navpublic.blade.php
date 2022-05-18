@@ -2,6 +2,8 @@
     <li><a href="#cs">Chi siamo</a></li>
     <li><a href="#regolamento" >Regolamento</a></li>
     <li><a href="#faq" >F.A.Q.</a></li>
+    <li><a href="#contatti" >Contatti</a></li>
+
     <li><a class="blubuttons" href="{{ route('accedi') }}"> Accedi </a> </li> 
     <li><a class="blubuttons" href="{{ route('registrati') }}"> Registrati </a> </li>      
 </ul>
