@@ -6,23 +6,20 @@
 <section class="loginsection">
     <div class="titolo">ACCEDI</div> <br>
     <div class="imgicona"><img src="images/products/iconalogin.png" alt="icona" style="width: 200px;; height:auto;" ></div> <br>
-    <form class="contact-form" id="addproduct" name="addproduct" enctype="multipart/form-data" method="post" action="{{ route('login')}}">
+    <form class="login-form" id="addproduct" name="addproduct" enctype="multipart/form-data" method="post" action="{{ route('login')}}">
                 @csrf
-                <div  class="wrap-input  rs1-wrap-input">
-                    <label class="label-input" for="user">User</label>
-                    <input class="input" type="text" name="user" id="user" value="">
-                </div>
+                    <label class="label-input" for="user">User</label><br>
+                    <input class="input-field" type="text" name="user" id="user" value=""><br>
 
-                <div  class="wrap-input  rs1-wrap-input">
-                    <label class="label-input" for="password">Password</label>
-                    <input class="input" type="password" name="password" id="password" value="">
-                </div>
+                    <label class="label-input" for="password">Password</label><br>
+                    <input class="input-field" type="password" name="password" id="password" value=""><br>
 
-                <div class="container-form-btn">                
-                    <input type="submit" class="form-btn1" value="Accedi">
-                </div>
+                    <input type="submit" class="button" value="Accedi"><br>
     </form>
-   
+   <br><br>
+    <nav class="label-input" > Non sei ancora registrato?</nav><br>
+        <img src="images/products/Logo.png" alt="logo" style="width:30px; height:30px; " >
+        <label class="bottomlogo"> ALLOGGISTUDENTI.com</p>
     <!-- <div class="login-form">
         <form name="login-form">
             <label class="input-label">Username</label><br>

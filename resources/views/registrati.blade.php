@@ -1,66 +1,44 @@
-@extends('layouts.admin')
+@extends('layouts.accedi')
 
-@section('title', 'Area Admin')
+@section('title', 'Registrati')
 
 @section('content')
 
 
-<div>
-    <div class="container-contact">
-        <div class="wrap-contact">
-            <form class="contact-form" id="addproduct" name="addproduct" enctype="multipart/form-data" method="post" action="{{ route('inserimento_dati')}}">
+<section class="loginsection">
+    <div class="titolo">REGISTRATI</div> <br>
+    <div class="imgicona"><img src="images/products/iconalogin.png" alt="icona" style="width: 200px;; height:auto;" ></div> <br>   
+            <form class="login-form" id="addproduct" name="addproduct" enctype="multipart/form-data" method="post" action="{{ route('inserimento_dati')}}">
                 @csrf
-                <div  class="wrap-input  rs1-wrap-input">
-                    <label class="label-input" for="user">User</label>
-                    <input class="input" type="text" name="user" id="user" value="">
-                </div>
+                    <label class="label-input" for="user">User</label> <br>
+                    <input class="input-field" type="text" name="user" id="user" value=""><br>
 
-                <div  class="wrap-input  rs1-wrap-input">
-                    <label class="label-input" for="password">Password</label>
-                    <input class="input" type="password" name="password" id="password" value="">
-                </div>
+                    <label class="label-input" for="password">Password</label> <br>
+                    <input class="input-field" type="password" name="password" id="password" value=""><br>
 
+                    <label class="label-input" for="nome">Nome</label> <br>
+                    <input class="input-field" type="text" name="nome" id="nome" value=""><br>
 
-                <div  class="wrap-input  rs1-wrap-input">
-                    <label class="label-input" for="nome">Nome</label>
-                    <input class="input" type="text" name="nome" id="nome" value="">
-                </div>
+                    <label class="label-input" for="cognome">Cognome</label><br>
+                    <input class="input-field" type="text" name="cognome" id="cognome" value=""><br>
 
+                    <label class="label-input" for="sesso">Sesso</label><br>
+                    <input class="input-field" type="text" name="sesso" id="sesso" value=""><br>
 
-                <div  class="wrap-input  rs1-wrap-input">
-                    <label class="label-input" for="cognome">Cognome</label>
-                    <input class="input" type="text" name="cognome" id="cognome" value="">
-                </div>
+                    <label class="label-input" for="data_nascita">Data di nascita</label><br>
+                    <input class="input-field" type="text" name="data_nascita" id="data_nascita" value=""><br>
 
+                    <label class="label-input" for="tipo">Tipo</label><br>
+                    <input class="input-field" type="text" name="tipo" id="tipo" value=""><br>
 
-                <div  class="wrap-input  rs1-wrap-input">
-                    <label class="label-input" for="sesso">Sesso</label>
-                    <input class="input" type="text" name="sesso" id="sesso" value="">
-                </div>
+                    <label class="label-input" for="image">Immagine</label><br>
+                    <input class="input-field" type="text" name="image" id="image" value=""><br>
 
-
-                <div  class="wrap-input  rs1-wrap-input">
-                    <label class="label-input" for="data_nascita">Data di nascita</label>
-                    <input class="input" type="text" name="data_nascita" id="data_nascita" value="">
-                </div>
-
-
-                <div  class="wrap-input  rs1-wrap-input">
-                    <label class="label-input" for="tipo">Tipo</label>
-                    <input class="input" type="text" name="tipo" id="tipo" value="">
-                </div>
-
-
-                <div  class="wrap-input  rs1-wrap-input">
-                    <label class="label-input" for="image">Immagine</label>
-                    <input class="input" type="text" name="image" id="image" value="">
-                </div>
-
-                <div class="container-form-btn">                
-                    <input type="submit" class="form-btn1" value="Aggiungi Prodotto">
-                </div>
+                    <input type="submit" class="button" value="Registrati"><br>
             </form>
-        </div>
-    </div>
-</div>
+
+<br>
+        <img src="images/products/Logo.png" alt="logo" style="width:30px; height:30px; " >
+        <label class="bottomlogo"> ALLOGGISTUDENTI.com</p>
+</secion>
 @endsection

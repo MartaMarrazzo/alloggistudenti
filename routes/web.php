@@ -17,7 +17,7 @@ Route::get('/selTopCat/{topCatId}/selCat/{catId}', 'PublicController@showCatalog
 Route::get('/selTopCat/{topCatId}', 'PublicController@showCatalog2')
         ->name('catalog2');
 
-Route::get('/', 'PublicController@showCatalog1')
+Route::get('/publiccontroller', 'PublicController@showCatalog1')
         ->name('catalog1');
 
 Route::view('/where', 'where')
@@ -35,7 +35,7 @@ Route::view('/annunci', 'annunci')
 Route::get('/listacitta', 'CittaController@showListaCitta1')
 ->name('listacitta1');
 
-Route::view('/home', 'home')
+Route::view('/', 'home')
 ->name('home');
 
 Route::view('/alloggilocatore', 'alloggilocatore')

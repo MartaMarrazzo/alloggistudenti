@@ -12,7 +12,7 @@ class Inoltra extends Migration
      * @return void
      */
     public function up()
-    {
+    {/*
         Schema::create('inoltra', function (Blueprint $table) {
             $table->bigIncrements('messaggio');            
             $table->foreign('messaggio')->references('id')->on('messaggio');
@@ -21,7 +21,7 @@ class Inoltra extends Migration
             $table->string('destinatario');            
             $table->foreign('destinatario')->references('user')->on('utente');
             
-        });
+        });/*/
     }
 
     /**

@@ -12,19 +12,13 @@ class DatabaseSeeder extends Seeder {
     const DESCPROD = '<p>Sed lacus. Donec lectus. Nullam pretium nibh ut turpis. Nam bibendum. In nulla tortor, elementum vel, tempor at, varius non, purus. Mauris vitae nisl nec metus placerat consectetuer. Donec ipsum. Proin imperdiet est. Phasellus dapibus semper urna. Pellentesque ornare, orci in consectetuer hendrerit, urna elit eleifend nunc, ut consectetuer nisl felis ac diam. Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem. Phasellus pellentesque. Mauris quam enim, molestie in, rhoncus ut, lobortis a, est. </p><p>Sed lacus. Donec lectus. Nullam pretium nibh ut turpis. Nam bibendum. In nulla tortor, elementum vel, tempor at, varius non, purus. Mauris vitae nisl nec metus placerat consectetuer. Donec ipsum. Proin imperdiet est. Phasellus dapibus semper urna. Pellentesque ornare, orci in consectetuer hendrerit, urna elit eleifend nunc, ut consectetuer nisl felis ac diam. Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem. Phasellus pellentesque. Mauris quam enim, molestie in, rhoncus ut, lobortis a, est.</p>';
 
     public function run() {
-    
-        DB::table('annunci')->insert([
-            ['id' => 1, 'name' => 'Intero appartamento', 'desc' => 'n annunci', 'image' => 'sono presenti n annunci','price' => 2],
-            ['id' => 2, 'name' => 'Bari', 'desc' => '0', 'image' => 'sono presenti n annunci','price' => 9],
-            ['id' => 3, 'name' => 'Ancona', 'desc' => '0', 'image' => 'sono presenti n annunci','price' => 9],
-            ['id' => 4, 'name' => 'Ancona', 'desc' => '0', 'image' => 'sono presenti n annunci','price' => 9],       
-        ]);
+
 
         DB::table('citta')->insert([
-            ['id' => 1, 'name' => 'Ancona', 'image' => 'Brazil.gif', 'numeroannunci' => 'sono presenti n annunci'],
-            ['id' => 2, 'name' => 'Bari', 'image' => 'bari.jpg', 'numeroannunci' => 'sono presenti n annunci'],
-            ['id' => 3, 'name' => 'Bergamo', 'image' => 'Italy.gif', 'numeroannunci' => 'sono presenti n annunci'],
-            ['id' => 4, 'name' => 'Bologna', 'image' => 'Italy.gif', 'numeroannunci' => 'sono presenti n annunci'],
+            ['id' => 1, 'name' => 'Ancona', 'image' => 'images/products/brescia.jpg', 'numeroannunci' => 'sono presenti n annunci'],
+            ['id' => 2, 'name' => 'Bari', 'image' => 'images/products/brescia.jpg', 'numeroannunci' => 'sono presenti n annunci'],
+            ['id' => 3, 'name' => 'Bergamo', 'image' => 'images/products/brescia.jpg', 'numeroannunci' => 'sono presenti n annunci'],
+            ['id' => 4, 'name' => 'Bologna', 'image' => 'images/products/brescia.jpg', 'numeroannunci' => 'sono presenti n annunci'],
             ['id' => 5, 'name' => 'Brescia', 'image' => 'images/products/brescia.jpg', 'numeroannunci' => 'sono presenti n annunci'],
             ['id' => 6, 'name' => 'Caltanissetta', 'image' => 'images/products/caltanissetta.jpg', 'numeroannunci' => 'sono presenti n annunci'],
             ['id' => 7, 'name' => 'Camerino', 'image' => 'images/products/camerino.jpg', 'numeroannunci' => 'sono presenti n annunci'],
@@ -96,17 +90,17 @@ class DatabaseSeeder extends Seeder {
         ]);
 
         DB::table('offerta')->insert([
-            ['id' => 1, 'stato' => 'libera', 'locazione' => 'Via Pippo 1', 'prezzo' => 450, 'genere' => 'M'],
-            ['id' => 2, 'stato' => 'libera', 'locazione' => 'Via Pluto 80', 'prezzo' => 250, 'genere' => ''],
-            ['id' => 3, 'stato' => 'libera', 'locazione' => 'Via Colombo 100', 'prezzo' => 300, 'genere' => 'F'],
-            ['id' => 4, 'stato' => 'libera', 'locazione' => 'Via Raffaele 15', 'prezzo' => 180, 'genere' => 'M'],
-            ['id' => 5, 'stato' => 'libera', 'locazione' => 'Via Ciccio 25', 'prezzo' => 230, 'genere' => ''],
-            ['id' => 6, 'stato' => 'libera', 'locazione' => 'Via Romeo 44', 'prezzo' => 300, 'genere' => 'F'],
-            ['id' => 7, 'stato' => 'libera', 'locazione' => 'Via Solferino 74', 'prezzo' => 120, 'genere' => ''],
-            ['id' => 8, 'stato' => 'libera', 'locazione' => 'Via Pozzetto 69', 'prezzo' => 400, 'genere' => 'F'],
-            ['id' => 9, 'stato' => 'libera', 'locazione' => 'Via Cesare Battisti 42', 'prezzo' => 350, 'genere' => 'M'],
-            ['id' => 10, 'stato' => 'libera', 'locazione' => 'Via Umberto I', 'prezzo' => 250, 'genere' => ''],
-            ['id' => 11, 'stato' => 'libera', 'locazione' => 'Via Rossano 32', 'prezzo' => 200, 'genere' => '']
+            ['id' => 1, 'stato' => 'libera', 'città'=>'Ancona', 'locazione' => 'Via Pippo 1', 'prezzo' => 450, 'genere' => 'M'],
+            ['id' => 2, 'stato' => 'libera','città'=>'Ancona', 'locazione' => 'Via Pluto 80', 'prezzo' => 250, 'genere' => ''],
+            ['id' => 3, 'stato' => 'libera', 'città'=>'Ancona','locazione' => 'Via Colombo 100', 'prezzo' => 300, 'genere' => 'F'],
+            ['id' => 4, 'stato' => 'libera', 'città'=>'Ancona','locazione' => 'Via Raffaele 15', 'prezzo' => 180, 'genere' => 'M'],
+            ['id' => 5, 'stato' => 'libera', 'città'=>'Ancona','locazione' => 'Via Ciccio 25', 'prezzo' => 230, 'genere' => ''],
+            ['id' => 6, 'stato' => 'libera', 'città'=>'Ancona','locazione' => 'Via Romeo 44', 'prezzo' => 300, 'genere' => 'F'],
+            ['id' => 7, 'stato' => 'libera', 'città'=>'Ancona','locazione' => 'Via Solferino 74', 'prezzo' => 120, 'genere' => ''],
+            ['id' => 8, 'stato' => 'libera', 'città'=>'Ancona','locazione' => 'Via Pozzetto 69', 'prezzo' => 400, 'genere' => 'F'],
+            ['id' => 9, 'stato' => 'libera', 'città'=>'Ancona','locazione' => 'Via Cesare Battisti 42', 'prezzo' => 350, 'genere' => 'M'],
+            ['id' => 10, 'stato' => 'libera','città'=>'Ancona', 'locazione' => 'Via Umberto I', 'prezzo' => 250, 'genere' => ''],
+            ['id' => 11, 'stato' => 'libera', 'città'=>'Ancona','locazione' => 'Via Rossano 32', 'prezzo' => 200, 'genere' => '']
         ]);
 
 

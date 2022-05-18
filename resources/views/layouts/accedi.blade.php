@@ -6,6 +6,8 @@
         <link rel="stylesheet" type="text/css" href="{{ asset('css/homestyle.css') }}" >
         <link rel="stylesheet" type="text/css" href="{{ asset('css/login.css') }}" >
         <link rel="stylesheet" type="text/css" href="{{ asset('css/stilecitta.css') }}" >
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/annunci.css') }}" >
+
 
 
         <title>LaProj2 | @yield('title', 'Catalogo')</title>

@@ -12,18 +12,18 @@ class Contratto extends Migration
      * @return void
      */
     public function up()
-    {
+    { /*
         Schema::create('contratto', function (Blueprint $table) {
             $table->bigIncrements('id')->unsigned();
             $table->date('data');
-            $table->String('locatore');
+            $table->String('locatore',25);
             $table->foreign('locatore')->references('user')->on('utente');
-            $table->String('locatario');
+            $table->String('locatario',25);
             $table->foreign('locatario')->references('user')->on('utente');
-            $table->String('offerta');
+            $table->integer('offerta');
             $table->foreign('offerta')->references('id')->on('offerta');
-            
-        });
+           
+        }); */
     }
 
     /**

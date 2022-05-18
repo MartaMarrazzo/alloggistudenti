@@ -12,7 +12,7 @@ class Interagisci extends Migration
      * @return void
      */
     public function up()
-    {
+    {/*
         Schema::create('interagisce', function (Blueprint $table) {
             $table->bigIncrements('offerta');            
             $table->foreign('offerta')->references('id')->on('offerta');
@@ -21,7 +21,7 @@ class Interagisci extends Migration
             $table->date('data');            
             $table->string('tipo',10);            
            
-        });
+        });*/
     }
 
     /**
