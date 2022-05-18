@@ -4,11 +4,14 @@ namespace App\Models\Resources;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Annunci extends Model {
+class Offerta extends Model {
 
-    protected $table = 'annunci';
+    protected $table = 'offerta';
     protected $primaryKey = 'id';
+    protected $guarded = ['id'];
+
     public $timestamps = false;
 
+    
 
 }
