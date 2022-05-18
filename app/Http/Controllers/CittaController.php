@@ -21,4 +21,16 @@ class CittaController extends Controller {
         return view('ListaCitta')
                         ->with('topCities', $Cities);
     }
+
+
+    public function showAnnuncio($nome_citta){
+        $Offerte = $this->_ListaCittaModel->getOffertebyCitta($nome_citta);
+        return view('annunci')
+                    ->with('offerte', $Offerte);
+    }
+
+
+
+
+
 }

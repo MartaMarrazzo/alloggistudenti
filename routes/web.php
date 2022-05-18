@@ -68,3 +68,6 @@ Route::post('/login', 'AdminController@login')
 
 Route::get('/viewLogin', 'AdminController@viewLogin')
 ->name('viewLogin');
+
+Route::get('/showAnnunci/{citta}', 'CittaController@showAnnuncio')
+->name('showAnnuncio');
