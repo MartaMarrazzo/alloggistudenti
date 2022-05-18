@@ -2,11 +2,10 @@
 
 @section('title', 'Annunci')
 
-<!-- inizio sezione prodotti -->
+
 @section('content')
 
 @isset($offerte)
-
 <section class="cittàselezionata">
     <nav class="menu" fixed="right">
         <ul>
@@ -20,11 +19,17 @@
 <section class="annunci">
     <div class="annuncio">
           <div class="columnimg">
-            <img class="imgaffitto" src="images/products/affitto-stanza.jpg" alt="imgaffitto">
+            <img class="imgaffitto" src="images/affitto-stanza.jpg" alt="imgaffitto">
           </div>
           <div class="columnimg columntext">
-            <p class="titolocolonna">{{$offerta->tipo}}</p>
-            <p class="testocolonna"> {{$offerta->locazione}}</p>
+
+          <p class="titolocolonna"> {{$offerta->tipo}} :  {{$offerta->titolo}}   </p>
+          <p class="testocolonna"> {{$offerta->descrizione_breve}} <br> {{$offerta->locazione}}</p>
+
+        </div>
+          <div class="columnimg columnprice">
+            <p class="testocolonna"> CANONE MENSILE <br>{{$offerta->prezzo}} EURO  </p>
+            <button class="dettaglibutton"> dettagli</button>
           </div>
           <div id="content"></div>
     </div>

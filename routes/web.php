@@ -38,6 +38,8 @@ Route::get('/listacitta', 'CittaController@showListaCitta1')
 Route::view('/', 'home')
 ->name('home');
 
+Route::view('/homelocatore', 'homelocatore')
+->name('homelocatore');
 Route::view('/alloggilocatore', 'alloggilocatore')
 ->name('alloggilocatore');
 Route::view('/messaggilocatore', 'messaggilocatore')
@@ -45,6 +47,8 @@ Route::view('/messaggilocatore', 'messaggilocatore')
 Route::view('/profilolocatore', 'profilolocatore')
 ->name('profilolocatore');
 
+Route::view('/homelocatario', 'homelocatario')
+->name('homelocatario');
 Route::view('/alloggilocatario', 'alloggilocatario')
 ->name('alloggilocatario');
 Route::view('/messaggilocatario', 'messaggilocatario')
@@ -71,3 +75,7 @@ Route::get('/viewLogin', 'AdminController@viewLogin')
 
 Route::get('/showAnnunci/{citta}', 'CittaController@showAnnuncio')
 ->name('showAnnuncio');
+
+
+Route::view('/homelocatario11', 'homelocatario11')
+->name('homelocatario11');

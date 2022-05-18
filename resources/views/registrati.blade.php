@@ -25,7 +25,7 @@
                     <label class="label-input" for="sesso">Sesso</label><br>
                     <input class="input-field" type="text" name="sesso" id="sesso" value=""><br>
 
-                    <label class="label-input" for="data_nascita">Data di nascita</label><br>
+                    <label class="label-input" for="data_nascita">Data di nascita (AAAA-MM-GG)</label><br>
                     <input class="input-field" type="text" name="data_nascita" id="data_nascita" value=""><br>
 
                     <label class="label-input" for="tipo">Tipo</label><br>

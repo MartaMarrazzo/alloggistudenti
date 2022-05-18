@@ -1,6 +1,6 @@
-@extends('layouts.public')
+@extends('layouts.locatore')
 
-@section('title', 'Home')
+@section('title', 'Home Locatore')
 
 <!-- inizio sezione prodotti -->
 @section('content')

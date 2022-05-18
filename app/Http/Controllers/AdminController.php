@@ -44,7 +44,7 @@ class AdminController extends Controller {
         $name = $request->user;
         $password = $request->password;
         if(Utente::where('user', $name)->where('password', $password)->exists()){
-            return view('who');
+            return view('homelocatore');
         }
         else return view('where');
     }

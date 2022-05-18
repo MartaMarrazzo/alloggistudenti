@@ -1,5 +1,4 @@
 <ul>
-    <li><a href="{{ route('home') }}">Home</a></li> 
     <li><a href="{{ route('offri') }}">Offri</a></li>
     <li><a href="{{ route('alloggilocatario') }}">i miei Alloggi</a></li>
     <li><a href="{{ route('messaggilocatario') }}" >Messaggi</a></li>

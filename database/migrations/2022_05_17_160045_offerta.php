@@ -20,6 +20,10 @@ class Offerta extends Migration
             $table->string('locazione',50);
             $table->string('genere',1);
             $table->integer('prezzo');
+            $table->char('descrizione_breve',200);
+            $table->text('descrizione',450);
+            $table->string('titolo',50);
+            $table->string('tipo',60);
         });
     }
 
