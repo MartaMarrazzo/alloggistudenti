@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Models\Resources\Citta;
+use App\Models\Resources\Offerta;
 
 
 class ListaCitta {
@@ -10,6 +11,12 @@ class ListaCitta {
     public function getCities() {
         return Citta::select('name')->get();
     }
+
+    public function getOffertebyCitta($citta, $paged=1, $order=null){
+        $offerte = Offerta::where('città', $citta)->get();
+        return $offerte;
+    }
+
 
 /*
         return Citta::where('id', [1])->get();

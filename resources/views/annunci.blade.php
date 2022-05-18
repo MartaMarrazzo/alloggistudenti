@@ -5,63 +5,34 @@
 <!-- inizio sezione prodotti -->
 @section('content')
 
+@isset($offerte)
+
 <section class="cittàselezionata">
     <nav class="menu" fixed="right">
         <ul>
             <li> <a href="catalogo.html"  id ="backButton" class="back-to-previous"> </a></li>
-            <li class="cittàsel"><h3 class="nomecittàselezionata"> Modena </h3></li>
+            <li class="cittàsel"><h3 class="nomecittàselezionata">citta</h3></li>
         </ul>
     </nav>
 </section>
 
+@foreach ($offerte as $offerta)
 <section class="annunci">
     <div class="annuncio">
           <div class="columnimg">
-        <img class="imgaffitto" src="images/products/affitto-stanza.jpg" alt="imgaffitto">
+            <img class="imgaffitto" src="images/products/affitto-stanza.jpg" alt="imgaffitto">
           </div>
           <div class="columnimg columntext">
-            <p class="titolocolonna">appartamento</p>
-            <p class="testocolonna">  4 camere, 2 bagni, max 5 inquilini</p>
-
+            <p class="titolocolonna">{{$offerta->tipo}}</p>
+            <p class="testocolonna"> {{$offerta->locazione}}</p>
           </div>
-          <div class="columnimg columnprice">
-            <p class="titolocolonna">affitto</p>
-            <p class="testocolonna">600 € </p>
-            <button class="dettaglibutton"> dettagli</button>
-        </div>
+          <div id="content"></div>
     </div>
-    <div class="annuncio">
-        <div class="columnimg">
-      <img class="imgaffitto" src="images/products/affitto-stanza.jpg" alt="imgaffitto">
-        </div>
-        <div class="columnimg columntext">
-          <p class="titolocolonna">appartamento</p>
-          <p class="testocolonna">  4 camere, 2 bagni, max 5 inquilini</p>
+</section>    
+  @endforeach
+  <!--Paginazione-->
+@endisset()
 
-        </div>
-        <div class="columnimg columnprice">
-          <p class="titolocolonna">affitto</p>
-          <p class="testocolonna">600 € </p>
-          <button class="dettaglibutton"> dettagli</button>
-        </div>
-    </div> 
-    <div class="annuncio">
-        <div class="columnimg">
-      <img class="imgaffitto" src="images/products/affitto-stanza.jpg" alt="imgaffitto">
-        </div>
-        <div class="columnimg columntext">
-          <p class="titolocolonna">appartamento</p>
-          <p class="testocolonna">  4 camere, 2 bagni, max 5 inquilini</p>
 
-        </div>
-        <div class="columnimg columnprice">
-          <p class="titolocolonna">affitto</p>
-          <p class="testocolonna">600 € </p>
-          <button class="dettaglibutton"> dettagli</button>
-        </div>
-    </div>
-
-   
-</section>
-
+          
 @endsection

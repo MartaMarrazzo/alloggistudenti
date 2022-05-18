@@ -11,9 +11,9 @@
        <li> <img class ="foto" src="{{ $citta->image }}">
         <p class="arancione"> {{ $citta->name }} </p>
        <p class="blu">{{ $citta->numeroannunci }}</span>
-        <p class="arancione2"> <a class="blu" href="{{ route('listacitta1', [$citta->id]) }}" >Visualizza</p></a></li>
+        <p class="arancione2"> <a class="blu" href="{{ route('showAnnuncio', [$citta->name])}}" >Visualizza</p></a></li>
         @endforeach
-        </ul>
+    </ul>
 </div>
 </section>
 @endsection
