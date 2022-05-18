@@ -1,6 +1,6 @@
 @extends('layouts.public')
 
-@section('title', 'Home')
+@section('title', 'Annunci')
 
 <!-- inizio sezione prodotti -->
 @section('content')
@@ -17,7 +17,7 @@
 <section class="annunci">
     <div class="annuncio">
           <div class="columnimg">
-        <img class="imgaffitto" src="img/affitto-stanza.jpg" alt="imgaffitto">
+        <img class="imgaffitto" src="images/products/affitto-stanza.jpg" alt="imgaffitto">
           </div>
           <div class="columnimg columntext">
             <p class="titolocolonna">appartamento</p>
@@ -32,7 +32,7 @@
     </div>
     <div class="annuncio">
         <div class="columnimg">
-      <img class="imgaffitto" src="img/affitto-stanza.jpg" alt="imgaffitto">
+      <img class="imgaffitto" src="images/products/affitto-stanza.jpg" alt="imgaffitto">
         </div>
         <div class="columnimg columntext">
           <p class="titolocolonna">appartamento</p>
@@ -47,7 +47,7 @@
     </div> 
     <div class="annuncio">
         <div class="columnimg">
-      <img class="imgaffitto" src="img/affitto-stanza.jpg" alt="imgaffitto">
+      <img class="imgaffitto" src="images/products/affitto-stanza.jpg" alt="imgaffitto">
         </div>
         <div class="columnimg columntext">
           <p class="titolocolonna">appartamento</p>

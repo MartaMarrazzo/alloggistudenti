@@ -29,7 +29,8 @@ Route::view('/who', 'who')
 Route::view('/accedi', 'accedi')
 ->name('accedi');
 
-
+Route::view('/annunci', 'annunci')
+->name('annunci');
 
 Route::get('/listacitta', 'CittaController@showListaCitta1')
 ->name('listacitta1');
