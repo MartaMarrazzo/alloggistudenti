@@ -14,7 +14,7 @@ class DatabaseSeeder extends Seeder {
     public function run() {
 
 
-        DB::table('citta')->insert([
+        DB::table('città')->insert([
             ['id' => 1, 'name' => 'Ancona', 'image' => 'images/products/brescia.jpg', 'numeroannunci' => 'sono presenti n annunci'],
             ['id' => 2, 'name' => 'Bari', 'image' => 'images/products/brescia.jpg', 'numeroannunci' => 'sono presenti n annunci'],
             ['id' => 3, 'name' => 'Bergamo', 'image' => 'images/products/brescia.jpg', 'numeroannunci' => 'sono presenti n annunci'],
