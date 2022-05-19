@@ -13,7 +13,7 @@ class CreateTableCitta extends Migration
      */
     public function up()
     {
-        Schema::create('citta', function (Blueprint $table) {
+        Schema::create('città', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name',25 );
             $table->text('image')->nullable();
@@ -29,6 +29,6 @@ class CreateTableCitta extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('table_citta');
+        Schema::dropIfExists('città');
     }
 }
