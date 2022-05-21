@@ -46,6 +46,8 @@ Route::view('/messaggilocatore', 'messaggilocatore')
 ->name('messaggilocatore');
 Route::view('/profilolocatore', 'profilolocatore')
 ->name('profilolocatore');
+Route::view('/annuncilocatore', 'annuncilocatore')
+->name('annuncilocatore');
 
 Route::view('/homelocatario', 'homelocatario')
 ->name('homelocatario');
@@ -55,6 +57,8 @@ Route::view('/messaggilocatario', 'messaggilocatario')
 ->name('messaggilocatario');
 Route::view('/profilolocatario', 'profilolocatario')
 ->name('profilolocatario');
+Route::view('/annuncilocatario', 'annuncilocatario')
+->name('annuncilocatario');
 Route::view('/offri', 'offri')
 ->name('offri');
 

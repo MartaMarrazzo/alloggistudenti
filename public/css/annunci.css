@@ -1,7 +1,10 @@
+
+
 .annuncio{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
     margin-top: 100px;
+    float: left;
     display: flex;
     flex-wrap: wrap;
     border-color: #30306C;
@@ -9,13 +12,40 @@
 
 }
 
+.annunciosingolo{
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.titoloannuncio{
+    color: #FF974B;
+    float: left;
+    margin: 0;
+    font-size: xx-large;
+    text-transform: uppercase;
+}
+
 .columnimg {
     color: #30306C;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
     float: left;
     padding: 1rem;
-    width: 35%;
+    width: 30%;
 }
+
+.columnsections, .col1, .col2{
+    margin-top: 10px;
+    width: 45%;
+    float:left
+}
+.col2{
+float: right;
+margin-top: 150px;
+}
+
+
     
 .columntext,
 .columnprice{
@@ -26,7 +56,7 @@
 }
 
 .columntext{
-    width: 40%;
+    width: 35%;
 }
 
 
@@ -58,7 +88,6 @@
    text-align: center;
 }
 
-x
 
 .testocolonna{
     font-size: medium;
@@ -67,23 +96,25 @@ x
 
 
 .annunci{
+    float: center;
     padding:0px 5px ;
     border: none;
     border-radius: 26px;
-    margin: 30px;
-    line-height: 42px;
+    margin-left: 40px;
+    line-height: 22px;
 }
 
 .imgaffitto{
+    background-color: #30306C;
     border-radius: 26px;
-    height:300px;
-    width: 400px;
+    height: 700px;
+    width: 500px;
 }
 
 @media screen and (max-width:1200px){
     .imgaffitto{
-        height: 200px;
-        width: 250px;  
+        height: 400px;
+        width: 450px;  
     }
 }
 
@@ -93,6 +124,7 @@ x
         width: 150px;  
     }
 }
+
 .dettaglibutton{
     background-color: #FF974B;
     color: #FFFFFF;
@@ -105,5 +137,49 @@ x
     margin-left: 25px;
     line-height: 38px;
     display: inline-flex;
+
+}
+
+.annuncibutton{
+    color: #30306C;
+    background-color: #f8c7a4;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 100px;
+    padding:0px 20px ;
+    border: #30306C;
+    list-style-type: none;
+    border-radius: 10px;
+    line-height: 38px;
+    display: inline-flex;
+
+
+}
+
+.description, .titolo{
+    font-size: medium;
+    color: #30306C;
+    float: left;
+    margin-left: 0%;
+    text-align: start;
+    display: inline;
+    width:100%;
+
+}
+
+.titolo{
+    font-size: large;
+    text-transform: uppercase;
+    color: #FF974B;
+}
+
+
+.ann{
+    display: inline-flex;
+    list-style-type: none;
+    float: left;
+    margin-left: -29px;
+    margin-top: 10px;
 
 }

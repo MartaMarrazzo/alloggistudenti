@@ -41,4 +41,6 @@
         <img src="images/products/Logo.png" alt="logo" style="width:30px; height:30px; " >
         <label class="bottomlogo"> ALLOGGISTUDENTI.com</p>
 </secion>
+
+
 @endsection

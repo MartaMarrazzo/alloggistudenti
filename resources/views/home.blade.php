@@ -240,8 +240,9 @@
 
   </div>
 
-  <div id ="backBtn" class="back-to-top" ></div>
-<script src="backbtn.js"></script>
+
 </section>
+<div id ="backBtn" class="back-to-top" ></div>
+<script src="backbtn.js"></script>
 
 @endsection
