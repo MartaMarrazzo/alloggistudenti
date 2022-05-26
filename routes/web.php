@@ -110,3 +110,6 @@ Route::view('/where', 'where')
 
 Route::view('/who', 'who')
         ->name('who');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
