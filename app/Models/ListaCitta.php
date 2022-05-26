@@ -17,6 +17,10 @@ class ListaCitta {
         return $offerte;
     }
 
+    public function getOffertabyId($id) {
+        return Offerta::find($id);
+    }
+
 
 /*
         return Citta::where('id', [1])->get();

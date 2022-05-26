@@ -29,40 +29,12 @@
         </div>
           <div class="columnimg columnprice">
             <p class="testocolonna"> CANONE MENSILE <br>{{$offerta->prezzo}} EURO  </p>
-          <p> <a class="dettaglibutton" href="{{ route('listacitta1') }}"> dettagli </a></p>
+          <p> <a class="dettaglibutton" href="{{ route('dettagliAnnuncio', [$offerta->id]) }}"> dettagli </a></p>
           </div>
           <div id="content"></div>
     </div>
 
-    <div class="annunciosingolo">
-      <div class="columnsections col1">
-      <p class ="titoloannuncio">  {{$offerta->titolo}} </p> <br> <br> <br>
-      <br> <!-- <img class="imgaffitto" src="images/affitto-stanza.jpg" alt="imgaffitto"> -->
-      <p class = "imgaffitto">  </p>
-      </div>
-
-      <div class="columnsections col2">
-       <p class = "description titolo"> {{$offerta->tipo}} </p>  
-       <ul class ="ann">
-        <li>
-         <p> <a class="annuncibutton" href="{{ route('listacitta1') }}"> Opziona </a></p>
-         </li>
-         <li>
-         <p> <a class="annuncibutton" href="{{ route('listacitta1') }}"> Contatta </a></p>
-         </li>
-        </ul>
-       <p class = "description titolo"> Descrizione</p>  
-       <p class="description">  {{$offerta->descrizione}}</p>
-       <p class = "description titolo"> Servizi inclusi</p>  
-       <p class="description">  {{$offerta->descrizione}}</p> 
-       <p class = "description titolo"> canone mensile</p>  
-       <p class="description">  {{$offerta->prezzo}}</p> 
-
-  
-      
-      
-      </div>
-    </div>
+   
 </section>    
   @endforeach
   <!--Paginazione

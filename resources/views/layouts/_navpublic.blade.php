@@ -4,8 +4,8 @@
     <li><a href="#faq" >F.A.Q.</a></li>
     <li><a href="#contatti" >Contatti</a></li>
 
-    <li><a class="blubuttons" href="{{ route('accedi') }}"> Accedi </a> </li> 
-    <li><a class="blubuttons" href="{{ route('registrati') }}"> Registrati </a> </li>      
+    <li><a class="blubuttons" href="{{ route('login') }}"> Accedi </a> </li> 
+    <li><a class="blubuttons" href="{{ route('register') }}"> Registrati </a> </li>      
 </ul>
 
 <!--

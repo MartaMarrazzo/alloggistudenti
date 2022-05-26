@@ -151,6 +151,18 @@ class DatabaseSeeder extends Seeder {
             ['user' => 'luca', 'password' => 'ingegneria', 'nome' => 'Luca', 'cognome' => 'Marcianesi', 'sesso' => 'M', 'data_nascita' => '2000-12-18', 'tipo' => 2, 'image' => ''],
             ['user' => 'diego20', 'password' => 'tecweb', 'nome' => 'Diego', 'cognome' => 'Mignani', 'sesso' => 'M', 'data_nascita' => '2000-02-05', 'tipo' => 1, 'image' => ''],
         ]);
+
+        DB::table('users')->insert([
+            ['name' => 'Alex', 'surname' => 'Verdi', 'email' => 'alex@verdi.it', 'username' => 'alexalex',
+                'password' => Hash::make('alexalex'), 'role' => 'user','created_at' => date("Y-m-d H:i:s"),
+                'updated_at' => date("Y-m-d H:i:s")],
+            ['name' => 'Marco', 'surname' => 'Bianchi', 'email' => 'marco@bianchi.it', 'username' => 'useruser',
+                'password' => Hash::make('useruser'), 'role' => 'user', 'created_at' => date("Y-m-d H:i:s"),
+                'updated_at' => date("Y-m-d H:i:s")],
+            ['name' => 'Mario', 'surname' => 'Rossi', 'email' => 'mario@rossi.it', 'username' => 'adminadmin',
+                'password' => Hash::make('adminadmin'), 'role' => 'admin', 'created_at' => date("Y-m-d H:i:s"),
+                'updated_at' => date("Y-m-d H:i:s")]
+        ]);
     }
 
 }

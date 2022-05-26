@@ -50,7 +50,7 @@ class AdminController extends Controller {
     }
 
     public function viewLogin(){
-        return view('login');
+        return view('accedi');
     }
 
 }

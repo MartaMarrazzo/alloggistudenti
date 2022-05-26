@@ -20,7 +20,7 @@ class Utente extends Migration
             $table->string('cognome',25);
             $table->string('sesso',10);
             $table->date('data_nascita');
-            $table->integer('tipo');
+            $table->string('tipo',10)->default('user');
             $table->text('image')->nullable();
         });
     }

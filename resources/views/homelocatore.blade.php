@@ -6,19 +6,21 @@
 @section('content')
 
 <section class="home">
-<div class="firstimagehome">
-  <div class="alignment"><b>TROVA L'ALLOGGIO<br> GIUSTO PER TE</b>
-  <img class="keys" src="images/products/chiavi-removebg-preview.png" alt="Passaggio di chiavi">
+<div class="firstimagehomelocatore">
+  <div class="alignment2"><b>BENVENUTO<br> <br> <br>
+  <a class="buttonlocatore" href=""> Inserisci annuncio </a>
+ </b>
   </div>
+  </div>
+
 </div>
 </section>
 <br id="cs">
-  <p class="titolo">Chi siamo <img class="iconimage" src="images/products/posizione.png" alt="Logo posizione geografica"> </p>
+  <p class="titoloo">Inserisci il tuo alloggio <img class="iconimage" src="images/products/posizione.png" alt="Logo posizione geografica"> </p>
   <div>
-    <p class="whoarewetext">Sei uno studente e cerchi un alloggio nella tua città universitaria?
-      <br> Migliaia di studenti si affidano a noi ogni anno! Il nostro sito ti consentirà di trovare la casa che
-      <br> fa per te. Potrai visualizzare tutti gli annunci disponibili nella tua città di interesse e valutare in 
-      <br> base ai tuoi desideri.
+    <p class="whoarewetext">Aiuta centinaia di studenti a trovare l'alloggio adatto alle loro esigenze.
+      <br> Utilizza la nostra piattaforma per pubblicizzare il tuo appartamento o il tuo posto letto, affidati
+      a noi per avere contratti sicuri e garantiti. 
     </p>
   </div>
 </section>
@@ -146,19 +148,19 @@
 
 <section class="esploracittà">
   <div class="container">
-    <p class="titolo"> Esplora in base alla tua città</p><br>
+    <p class="titoloo"> Visualizza annunci per città</p><br>
     <ul class="griglia">
       <li><img class ="foto" src="images/products/Ancona.jpg" alt="Ancona">
-        <p class="arancione">Ancona</p><p class="blu">x annunci disponibili</p><p class="arancione2">
+        <p class="arancione">Ancona</p><p class="arancione2">
           <a class="arancione2">Visualizza</p></a></li>
       <li><img class ="foto" src="images/products/Milano.jpg">
-        <p class="arancione">Milano</p><p class="blu">x annunci disponibili</p><p class="arancione2">
+        <p class="arancione">Milano</p><p class="arancione2">
           <a class="arancione2">Visualizza</p></a></li>
       <li><img class ="foto" src="images/products/Roma.webp">
-        <p class="arancione">Roma</p><p class="blu">x annunci disponibili</p><p class="arancione2">
+        <p class="arancione">Roma</p><p class="arancione2">
           <a class="arancione2">Visualizza</p></a></li>
       <li><img class ="foto" src="images/products/Bari.jpg">
-        <p class="arancione">Bari</p><p class="blu">x annunci disponibili</p><p class="arancione2">
+        <p class="arancione">Bari</p><p class="arancione2">
           <a class="arancione2">Visualizza</p></a></li>
     </ul>
     <p><a class="tuttelecittà" href="{{ route('listacitta1') }}"><b>Tutte le città</b></a></p>
@@ -184,7 +186,7 @@
 </section>  
 
 <section id="faq" class="faq-container">
-  <div class="titolo">FAQ</div>
+  <div class="titoloo">FAQ</div>
 
       <h1 class="faq-page">Domanda 1</h1>
       <div class="faq-body">
@@ -214,13 +216,6 @@
 <script src="faq-js.js"></script>
 </section>
 
-<section >
-<div><p class="titolo">Inserisci la tua mail per rimanere aggiornato</p></div>
-<div class ="titolo"> 
-  <input class="areaEmail" type="text" value="" name="email" id="newsletter" placeholder="Inserisci la tua Email" title="Iscriviti alla nostra newsletter" >
-  <button type="submit" title="Sottoscrivi"  class="blubuttons">Invia</button>
-</div>
-</section>
 
 
 <section class="contacts-section" id="contatti">
@@ -240,8 +235,9 @@
 
   </div>
 
-  <div id ="backBtn" class="back-to-top" ></div>
-<script src="backbtn.js"></script>
+
 </section>
+<div id ="backBtn" class="back-to-top" ></div>
+<script src="backbtn.js"></script>
 
 @endsection

@@ -10,6 +10,7 @@
 
 
         <title>LaProj2 | @yield('title', 'Catalogo')</title>
+      
     </head>
 
     <body>

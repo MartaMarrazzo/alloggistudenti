@@ -10,7 +10,7 @@
     margin-bottom: 0;
     padding-bottom: 0;
 }
-.titolo{
+.titoloo{
     margin-top: 5%;
     text-align: center;
     color: #30306C;
@@ -141,7 +141,7 @@
     border: white;
 }
 
-.alignment{
+.alignment, .alignment2{
     padding-top: 5%;
     text-align: center;
     margin-left: 62%;
@@ -149,6 +149,11 @@
     font-size: xx-large;
     height: 450px;
     width: 550px;
+}
+
+.alignment2{
+align-items: center;
+margin-left: 25%;
 }
 
 .keys{
@@ -161,6 +166,15 @@
     background-image: url(images/affitto-casa-studenti.png);
     height: 450px;
     width: 100%;
+    text-align: center;
+    display: flex;
+}
+.firstimagehomelocatore{
+    background-image: url(images/affitto-stanza.jpg);
+    height: 100%;
+    width: 100%;
+    background-repeat: round;
+    align-items: center;
     text-align: center;
     display: flex;
 }
@@ -239,7 +253,7 @@ header{
     top: 1%;
 }
 
-.blubuttons{
+.blubuttons, .buttonlocatore{
     background-color: rgb(7, 1, 87);
     color: #FFFFFF;
     font-size: 13px;
@@ -253,6 +267,13 @@ header{
     display: inline-flex;
 }
 
+.buttonlocatore{
+    padding:5px 30px ;
+    align-items: center;
+    text-align: center;
+    font-size: 33px;
+    background-color: #f9b686;
+}
 
 .blubuttons:hover{
     color: rgb(237, 157, 76);
@@ -711,7 +732,7 @@ footer{
     width: 50px;
     position: fixed;
     bottom: 80px;
-    right: 30px;
+    left: 87%;
 }
 
 

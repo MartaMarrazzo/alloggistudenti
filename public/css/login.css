@@ -18,11 +18,16 @@
     text-align: center;
 }
 .label-input,
-.label-input-smaller{
+.label-input-smaller,
+.label-input1
+{
     font-size: 16px;
     font-weight:600;
     color: #30306C;
 }
+
+.label-input1
+{color: #FF974B;}
 .input-field{
     font-family:'Work Sans', sans-serif;
     font-size: 13px;

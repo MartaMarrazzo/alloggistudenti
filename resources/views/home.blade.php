@@ -13,7 +13,7 @@
 </div>
 </section>
 <br id="cs">
-  <p class="titolo">Chi siamo <img class="iconimage" src="images/products/posizione.png" alt="Logo posizione geografica"> </p>
+  <p class="titoloo">Chi siamo <img class="iconimage" src="images/products/posizione.png" alt="Logo posizione geografica"> </p>
   <div>
     <p class="whoarewetext">Sei uno studente e cerchi un alloggio nella tua città universitaria?
       <br> Migliaia di studenti si affidano a noi ogni anno! Il nostro sito ti consentirà di trovare la casa che
@@ -146,7 +146,7 @@
 
 <section class="esploracittà">
   <div class="container">
-    <p class="titolo"> Esplora in base alla tua città</p><br>
+    <p class="titoloo"> Esplora in base alla tua città</p><br>
     <ul class="griglia">
       <li><img class ="foto" src="images/products/Ancona.jpg" alt="Ancona">
         <p class="arancione">Ancona</p><p class="blu">x annunci disponibili</p><p class="arancione2">
@@ -184,7 +184,7 @@
 </section>  
 
 <section id="faq" class="faq-container">
-  <div class="titolo">FAQ</div>
+  <div class="titoloo">FAQ</div>
 
       <h1 class="faq-page">Domanda 1</h1>
       <div class="faq-body">
@@ -215,8 +215,8 @@
 </section>
 
 <section >
-<div><p class="titolo">Inserisci la tua mail per rimanere aggiornato</p></div>
-<div class ="titolo"> 
+<div><p class="titoloo">Inserisci la tua mail per rimanere aggiornato</p></div>
+<div class ="titoloo"> 
   <input class="areaEmail" type="text" value="" name="email" id="newsletter" placeholder="Inserisci la tua Email" title="Iscriviti alla nostra newsletter" >
   <button type="submit" title="Sottoscrivi"  class="blubuttons">Invia</button>
 </div>

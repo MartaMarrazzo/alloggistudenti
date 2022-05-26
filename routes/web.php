@@ -61,7 +61,7 @@ Route::view('/annuncilocatario', 'annuncilocatario')
 ->name('annuncilocatario');
 Route::view('/offri', 'offri')
 ->name('offri');
-
+/*
 Route::get('/admin', 'AdminController@index')
 ->name('admin');
 
@@ -72,7 +72,7 @@ Route::post('/admin/newproduct', 'AdminController@registrati')
 ->name('inserimento_dati');
 
 Route::post('/login', 'AdminController@login')
-->name('login');
+->name('login');*/
 
 Route::get('/viewLogin', 'AdminController@viewLogin')
 ->name('viewLogin');
@@ -80,6 +80,33 @@ Route::get('/viewLogin', 'AdminController@viewLogin')
 Route::get('/showAnnunci/{citta}', 'CittaController@showAnnuncio')
 ->name('showAnnuncio');
 
+Route::get('/locatore/offerta{id}', 'CittaController@showAnnuncioSingolo')
+->name('dettagliAnnuncio');
 
-Route::view('/homelocatario11', 'homelocatario11')
-->name('homelocatario11');
+
+
+
+
+
+
+
+// Rotte per l'autenticazione
+Route::get('login', 'Auth\LoginController@showLoginForm')
+        ->name('login');
+
+Route::post('login', 'Auth\LoginController@login');
+
+Route::post('logout', 'Auth\LoginController@logout')
+        ->name('logout');
+
+// Rotte per la registrazione
+Route::get('register', 'Auth\RegisterController@showRegistrationForm')
+        ->name('register');
+
+Route::post('register', 'Auth\RegisterController@register');
+
+Route::view('/where', 'where')
+        ->name('where');
+
+Route::view('/who', 'who')
+        ->name('who');
