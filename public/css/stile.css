@@ -33,7 +33,7 @@
 }
 
 
-/*tre immagini*/
+/*stile icone: lente-contratto-*/
 
 .divtreimmagini{
     margin-top: 5%;
@@ -62,6 +62,8 @@
 
 }
 
+/*stile frecce per studente successivo e precedente*/
+
 .prec, .succ {
     cursor: pointer;
     user-select:none;
@@ -85,7 +87,7 @@
     color: black;
   }
 
-
+/*stile parte riguardante studenti e div arancione*/
 
 .rectangletext{
     padding-top: 8px;
@@ -156,11 +158,15 @@ align-items: center;
 margin-left: 25%;
 }
 
+/*stile immagine delle chiavi*/
+
 .keys{
     width: 300px;
     height: 280px;
     transform: rotate(30deg);
 }
+
+/*stile prime immagini della pagina*/
 
 .firstimagehome{
     background-image: url(images/affitto-casa-studenti.png);
@@ -179,13 +185,17 @@ margin-left: 25%;
     display: flex;
 }
 
+/*stile linea separatrice*/
+
 .spaceline{
     width: 15%;
     background-color: black;
     margin-left: 42%;
 }
 
-body{
+/*stile tag nativi per la pagina home*/
+
+.bodyhome{
     background-color:linear-gradient(0deg, rgb(170, 26, 26) 0%, rgb(73, 3, 58) 31%);
     background-color: rgb(255, 255, 255);
     font-family: 'Work Sans', sans-serif;
@@ -193,18 +203,20 @@ body{
 }
 
 
-p{
+.phome{
     font-size:32px ;
     font-weight: 600;
+    margin-bottom:12px;
+    margin-left: 30px;
 }
 
-h3{
+.h3home{
     font-size:38px ;
     font-weight: 800;
 }
 
 
-a {
+.ahome {
     font-size: 35px;
     font-weight: 800;
     line-height: 42px;
@@ -214,13 +226,6 @@ a {
 }
 
 
-
-p {
-    font-size: 16px;
-    margin-bottom:12px;
-    margin-left: 30px;
-
-}
 a:hover{
     color: #30306C;
 }
@@ -232,7 +237,7 @@ a:hover{
 }
 
 
-header{
+.headerhome{
     position: fixed;
     top: 0;
     left: 0;
@@ -246,6 +251,7 @@ header{
   /*  background:linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 31%);*/
 }
 
+/*stile bottoni header*/
 
 .headerbuttons{
     position: fixed;
@@ -279,7 +285,7 @@ header{
     color: rgb(237, 157, 76);
 }
 
-section{
+.sectionhome{
     padding-bottom: 34px;
     padding-top: 34px;
 }
@@ -300,7 +306,7 @@ section{
     max-height: 100px;
 }
 
-img{
+.imghome{
     width: 80px;
     height: auto;
 }
@@ -309,6 +315,7 @@ img{
     width: 40px;
     height: auto;
 }
+
 .name{
     margin-left: 10px;
     margin-right: 140px;
@@ -317,12 +324,12 @@ img{
     color: #30306C;
     line-height: 42px;}
 
-menu ul{
+.menu_ul_home{
     list-style-type: none;
     display: flex;
 }
 
-.menu ul li{
+.menu_ul_li{
     list-style-type: none;
     margin-right: 10px;
     font-weight: bold;
@@ -331,7 +338,7 @@ menu ul{
     display: inline-flex;
 }
 
-.menu ul li a {
+.menu_ul_li_a {
     list-style-type: none;
     font-size: 14px;
 }  
@@ -342,7 +349,7 @@ menu ul{
     top: -50px;
 
 }
-/*centro*/
+/*stile e centro area email*/
 
 .centro{
     text-align: center;
@@ -359,8 +366,6 @@ menu ul{
     text-align: center;
 }
 
-
-
 .container{
     width: 80%;
     margin-right: auto;
@@ -370,9 +375,7 @@ menu ul{
 
 }
 
-
-
-/*contatti*/
+/*stile sezione contatti*/
 
 .contacts-section{
     margin-bottom: 200px;
@@ -410,9 +413,6 @@ menu ul{
     height: auto;
 }
 
-
-
-
 .maintext-contact{
     color: #FF974B;
     font-size: xx-large;
@@ -428,7 +428,7 @@ menu ul{
 
 }
 
-/*esploracittà,3img*/
+/*esploracittà,3 img*/
 
 .treimg{
     margin-top: 0;
@@ -465,6 +465,7 @@ menu ul{
     font-size: 12px;
 }
 
+/*stile tutte le città*/
 
 .foto{
     height: 210px;
@@ -502,7 +503,7 @@ menu ul{
     color: #30306C;
 }
 
-/*regolamento*/
+/*stile regolamento*/
 .reg{
     text-align:center;
 }
@@ -543,130 +544,17 @@ menu ul{
     text-align: left;
 }
 
-
-/*footer*/
-footer{
+/*stile footer*/
+.footerhome{
+    background-color: #FF974B;
+    height: 200px;
     margin-top: 100px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
 
-.footer-support-text-owned {
-    font-size: 17px;
-    padding-top: 15px;
-    margin-top: 20px;
-    color: #fff;
-    margin-left: 0px;
-    font-weight: 200;
-}
-   
-.footer-container {
-    background-color: rgb(237, 157, 76); /* Optional */
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-
-}
-    
-@media screen and (max-width:1100px){
-    .footer-container{
-    display: flex;
-    flex-wrap: wrap;
-    }
-    .firstimagehome{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .alignment{
-        margin-top: 170px;
-        margin-left: 15px;
-        align-content: none;
-        font-size:40px;
-        text-align: justify;
-    }
-
-    .keys{
-         display: none;
-    }
-}
-
-.column {
-    color: #30306C;
-    grid-template-columns: 1fr 1fr 1fr;
-    float: left;
-    padding: 1rem;
-    height: 260px;
-    width: 600px;
-}
-    
-.column-2,
-.column-3{
-    margin-top: 10px;
-    padding-top: 10px;
-    height: 260px;
-    width: 250px;
-}
-    
-    
-.footer-header {
-        color: #30306C;
-        font-weight: 300;
-        font-size:30px ;
-        margin-bottom: 27px;
-}
-
-    /*bisogna sostituire l'immagine del logo con 
-    logo su sfondo arancione -file alloggistudenti.html*/
-    
-.small-footer-header {
-    text-transform: uppercase;
-    line-height: 5px;
-    font-size: 23px;
-    font-weight: 200;
-    margin-bottom: 15px;
-}
-    
-.footer-support-text {
-    color: #30306C;
-    font-size: 21px;
-    margin-top: 15px;
-    margin-left: 0px;
-    font-weight: 200;
-}
-    
-.footer-link {
-    color: #30306C;
-    text-decoration: none;
-    text-transform: none;
-    line-height: 5px;
-    font-size: 20px;
-    font-weight: 100;
-}
-    
-.fcc-footer-logo {
-    width: 40px;
-    vertical-align: middle;
-}
-    
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-
-    
-.bottomFooter{
-    background-color: #30306C;
-    color: #FF974B;
-    width: 100%;
-    height: 30px;
-    text-align: right;
-    margin: 0;
-    padding: 0;
-}
-
-
-/*FAQ*/
+/*stile FAQ*/
 
     .faq-container{
     display: flex;
@@ -707,19 +595,8 @@ footer{
         content: "\2796"; /* Unicode (-) */
     }
 
-    
-    .bottomFooter{
-        background-color: #30306C;
-        padding-top: 10px;
-        color: #FF974B;
-        font-size: medium;
-        width: 100%;
-        height: 40px;
-        text-align: left;
 
-    }
-
-/*bottone*/
+/*stile freccia su*/
 .back-to-top{
     background-image: url('images/products/1500306-icona-freccia-verso-l-alto-gratuito-vettoriale.png');
     background-size: contain ;
@@ -747,3 +624,365 @@ footer{
   .fulldot{
       background-color: #30306C;
   }
+
+/*login*/
+
+.bodylogin{
+    width: 650px;
+    height: auto;
+    background: aqua;
+    
+}
+
+.titolo{
+    text-transform: uppercase;
+    margin-top: 5%;
+    text-align: center;
+    color: #30306C;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.loginsection{
+    text-align: center;
+}
+.label-input,
+.label-input-smaller,
+.label-input1
+{
+    font-size: 16px;
+    font-weight:600;
+    color: #30306C;
+}
+
+.label-input1
+{color: #FF974B;}
+.input-field{
+    font-family:'Work Sans', sans-serif;
+    font-size: 13px;
+    color: #30306C;
+    background-color: #fac49d;
+    padding: 12px 16px;
+    width: auto;
+    border-radius: 30px;
+    border: none;
+    margin-bottom: 16px;
+    margin-top: 8px;
+}
+
+.button{
+    color: #FFFFFF;
+    background-color: #FF974B;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding:12px 24px ;
+    border: none;
+    border-radius: 36px;
+}
+
+.bottomlogo{
+    font-size: 13px;
+    font-weight: 300;
+    color: #30306C;
+}
+
+/*annunci*/
+
+.annuncio{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    margin-top: 100px;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    border-color: #30306C;
+    border: #30306C;
+
+}
+
+.annunciosingolo{
+    margin-top: 5%;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.titoloannuncio{
+    color: #FF974B;
+    float: left;
+    margin-left: 35px;
+    font-size: xx-large;
+    text-transform: uppercase;
+}
+
+.columnimg {
+    color: #30306C;
+    grid-template-columns: 1fr 1fr 1fr ;
+    float: left;
+    padding: 1rem;
+    width: 30%;
+}
+
+.columnsections, .col1, .col2{
+    margin-top: 10px;
+    width: 45%;
+    float:left
+}
+.col2{
+float: right;
+margin-top: 150px;
+}
+
+.columntext,
+.columnprice{
+    margin-top: 10px;
+    padding-top: 10px;
+    height: 260px;
+    width: 25%;
+}
+
+.columntext{
+    width: 35%;
+}
+
+.titolocolonna{
+    font-size: large;
+    color: #30306C;
+    text-transform: uppercase;
+}
+
+.back-to-previous{
+    background-image: url('images/products/1500306-icona-freccia-verso-l-alto-gratuito-vettoriale.png');
+    transform: rotate(270deg);
+    background-size: contain ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    top: 180px;
+    left: 80px;
+}
+
+.nomecittàselezionata{
+    margin-top: 60px;
+    font-size: xx-large;
+    color: #30306C;
+    text-transform: uppercase;
+   text-align: center;
+}
+
+.testocolonna{
+    font-size: medium;
+    color: #30306C;
+}
+
+.annunci{
+    float: center;
+    padding:0px 5px ;
+    border: none;
+    border-radius: 26px;
+    margin-left: 40px;
+    line-height: 22px;
+}
+
+.imgaffitto{
+    background-color: #30306C;
+    border-radius: 26px;
+    height: 700px;
+    width: 500px;
+}
+
+@media screen and (max-width:1200px){
+    .imgaffitto{
+        height: 400px;
+        width: 450px;  
+    }
+}
+
+@media screen and (max-width:750px){
+    .imgaffitto{
+        height: 180px;
+        width: 150px;  
+    }
+}
+
+.dettaglibutton{
+    background-color: #FF974B;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding:0px 20px ;
+    border: none;
+    border-radius: 26px;
+    margin-left: 25px;
+    line-height: 38px;
+    display: inline-flex;
+
+}
+
+.annuncibutton{
+    color: #30306C;
+    background-color: #f8c7a4;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 100px;
+    padding:0px 20px ;
+    border: #30306C;
+    list-style-type: none;
+    border-radius: 10px;
+    line-height: 38px;
+    display: inline-flex;
+
+
+}
+
+.description, .titolo, .infolocatore, .descriptionlocatore{
+    font-size: medium;
+    color: #30306C;
+    float: left;
+    margin-left: 0%;
+    text-align: start;
+    display: inline;
+    width:100%;
+
+}
+
+.infolocatore, .descriptionlocatore{
+    margin-left: 5%;
+}
+
+.titolo, .infolocatore{
+    font-size: large;
+    text-transform: uppercase;
+    color: #FF974B;
+}
+
+.ann{
+    display: inline-flex;
+    list-style-type: none;
+    float: left;
+    margin-left: -29px;
+    margin-top: 10px;
+
+}
+
+/*citta*/
+
+.cittaref{
+    margin-top: 30px;
+    text-transform: none;
+    color: #30306C;
+    font-size: x-large;
+}
+
+.annunci{
+    margin-top: 2px;
+    color: coral;
+    font-size: smaller;
+}
+
+.arancione, .arancione2{
+    margin-left: 0%;
+    text-align: start;
+    color: #FF974B;
+    background-color: #FFFFFF;
+}
+
+.titolo{
+    margin-top: 5%;
+    text-align: center;
+    color: #30306C;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.blu{
+    margin-left: 0%;
+    margin-top: -8px;
+    text-align: start;
+    background-color: #FFFFFF;
+    color: #30306C;
+    font-size: smaller;
+}
+
+.arancione2{
+    font-size: xx-small;
+    margin-top: -20px;
+}
+
+.griglia li{
+    display: inline-block;
+    margin: 24px;
+}
+
+.griglia ul li p {
+    padding: 5px 5px 0 5px;
+    margin: 0;
+    font-size: 12px;
+}
+
+.foto{
+    height: 210px;
+    width: 210px;
+}
+
+.container{
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1140px; /* in modo da vincolare l'estensione massima
+    in modo che resti tutto contenuto e compresso senza rompere il layout*/
+
+}
+
+.acittà {
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 42px;
+    color: #FF974B;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.pcittà {
+    font-size: 16px;
+    margin-bottom:12px;
+    margin-left: 30px;
+
+}
+
+a:hover{
+    color: #30306C;
+}
+ 
+.anchors{
+    visibility: hidden;
+    position: relative;
+    top: -50px;
+
+}
+
+.menucatalogo ul{
+    margin-left: 290px;
+    list-style-type: none;
+    display: flex;
+}
+
+.menucatalogo ul li{
+    list-style-type: none;
+    margin-right: 30px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 42px;
+    display: inline-flex;
+}
+
+.menucatalogo ul li a {
+    list-style-type: none;
+    font-size: 14px;}
