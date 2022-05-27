@@ -30,7 +30,16 @@ class RegisterController extends Controller
      */
     
     //protected $redirectTo = '/home';
-    protected $redirectTo = '/';
+    protected function redirectTo() {        
+        $role = auth()->user()->role;
+        switch ($role) {
+            case '1': return '/locatore';
+                break;
+            case '2': return '/where';
+                break;
+            default: return '/';
+        };
+    }
 
     /**
      * Create a new controller instance.
@@ -56,6 +65,9 @@ class RegisterController extends Controller
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'username' => ['required', 'string', 'min:8', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'data_nascita'=>['required','date'],
+            'sesso' => ['required', 'string', 'max:255'],
+            'role' => ['required']
         ]);
     }
 
@@ -73,6 +85,10 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'username' => $data['username'],
             'password' => Hash::make($data['password']),
+            'sesso' => $data['sesso'],
+            'role' => $data['role'],
+            'data_nascita' => $data['data_nascita'],
+
         ]);
     }
 }

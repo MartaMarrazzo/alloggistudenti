@@ -11,13 +11,13 @@
             <div class="logo"><img class="logoimmagine" src="images/products/Logo.png" alt="Logo"></div>
             <div class="name">ALLOGGISTUDENTI.com</div>
             <nav class="menu" fixed="right">
-                @include('layouts/_navpublic')
+                @include('layouts/_navlocatore')
             </nav>
             </div>
         </header>
 
         <div>
-            @yield('content')    
+            <p>sei nell area locatore</p> 
         </div>
         
         <footer>
