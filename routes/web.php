@@ -17,78 +17,27 @@ Route::get('/selTopCat/{topCatId}/selCat/{catId}', 'PublicController@showCatalog
 Route::get('/selTopCat/{topCatId}', 'PublicController@showCatalog2')
         ->name('catalog2');
 
-Route::get('/publiccontroller', 'PublicController@showCatalog1')
+Route::get('/', 'PublicController@showCatalog1')
         ->name('catalog1');
 
-Route::view('/where', 'where')
-        ->name('where');
+Route::get('/admin/newproduct', 'AdminController@addProduct')
+        ->name('newproduct');
 
-Route::view('/who', 'who')
-        ->name('who');
+Route::post('/admin/newproduct', 'AdminController@storeProduct')
+        ->name('newproduct.store');
 
-Route::view('/accedi', 'accedi')
-->name('accedi');
-
-Route::view('/annunci', 'annunci')
-->name('annunci');
-
-Route::get('/listacitta', 'CittaController@showListaCitta1')
-->name('listacitta1');
-
-Route::view('/', 'home')
-->name('home');
-
-Route::view('/homelocatore', 'homelocatore')
-->name('homelocatore');
-Route::view('/alloggilocatore', 'alloggilocatore')
-->name('alloggilocatore');
-Route::view('/messaggilocatore', 'messaggilocatore')
-->name('messaggilocatore');
-Route::view('/profilolocatore', 'profilolocatore')
-->name('profilolocatore');
-Route::view('/annuncilocatore', 'annuncilocatore')
-->name('annuncilocatore');
-
-Route::view('/homelocatario', 'homelocatario')
-->name('homelocatario');
-Route::view('/alloggilocatario', 'alloggilocatario')
-->name('alloggilocatario');
-Route::view('/messaggilocatario', 'messaggilocatario')
-->name('messaggilocatario');
-Route::view('/profilolocatario', 'profilolocatario')
-->name('profilolocatario');
-Route::view('/annuncilocatario', 'annuncilocatario')
-->name('annuncilocatario');
-Route::view('/offri', 'offri')
-->name('offri');
-/*
 Route::get('/admin', 'AdminController@index')
-->name('admin');
+        ->name('admin');
 
-Route::get('/admin/newproduct', 'AdminController@view_registrati')
-->name('registrati');
+Route::get('/user', 'UserController@index')
+        ->name('user')->middleware('can:isUser');
 
-Route::post('/admin/newproduct', 'AdminController@registrati')
-->name('inserimento_dati');
-
-Route::post('/login', 'AdminController@login')
-->name('login');*/
-
-Route::get('/viewLogin', 'AdminController@viewLogin')
-->name('viewLogin');
-
-Route::get('/showAnnunci/{citta}', 'CittaController@showAnnuncio')
-->name('showAnnuncio');
-
-Route::get('/locatore/offerta{id}', 'CittaController@showAnnuncioSingolo')
-->name('dettagliAnnuncio');
+Route::get('/locatore', 'UserController@areaLocatore')
+        ->name('locatore');
 
 
-
-
-
-
-
+Route::get('/listacitta', 'PublicController@showCatalog1')
+        ->name('listacitta1');
 
 // Rotte per l'autenticazione
 Route::get('login', 'Auth\LoginController@showLoginForm')
@@ -110,6 +59,11 @@ Route::view('/where', 'where')
 
 Route::view('/who', 'who')
         ->name('who');
+
+// Rotte inserite dal comando artisan "ui vue --auth" 
+// Auth::routes();
+// Route::get('/home', 'HomeController@index')->name('home');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
